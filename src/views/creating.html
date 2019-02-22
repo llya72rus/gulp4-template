@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Создание выпуска</title>
+        <meta name="theme-color" content="">
+        <meta name="viewport" content="initial-scale=1.0, width=1024">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/mobius1/selectr@latest/dist/selectr.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script type="text/javascript"  src="https://cdn.jsdelivr.net/gh/mobius1/selectr@latest/dist/selectr.min.js"></script>
+        <script defer
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+
+    </head>
+    <body class="inner-page ">
+
+        <div class="wrapper">
+            <!-- Sidebar -->
+            //= blocks/sidebar.html
+            <!-- / Sidebar -->
+            <main class="main">
+                <!-- Хедер -->
+                //= blocks/main-header.html
+                <!-- / Хедер -->
+                <div class="content">
+                  <div class="content__top-panel">
+                    <h1 class="content__main-title">Создание выпуска</h1>
+                    <button class="content__top-button btn btn-sm btn-outline btn-copy">Скопировать ссылку</button>
+                  </div>
+                
+                  <div class="mailing-create">
+                    <div class="mailing-create__tabs">
+                      <a href="#" class="mailing-create__tabs-link mailing-create__tabs-link_active">Содержание</a>
+                      <a href="#" class="mailing-create__tabs-link">Параметры</a>
+                      <a href="#" class="mailing-create__tabs-link">Предпросмотр</a>
+                      <a href="#" class="mailing-create__tabs-link">Задачи</a>
+                    </div>
+
+                    <div class="mailing-create__tabs-contents">
+                      <div class="mailing-create__content show">
+                        <div class="mailing-blocks">
+                          <div class="mailing-blocks__wrapper">
+                            <ul class="mailing-blocks__list">
+                              <li class="mailing-blocks__item mailing-block mailing-block_content-block">
+                                  <span class="mailing-block__title">Контентный блок</span>
+                                  <div class="mailing-block__btns">
+                                    <button class="mailing-block__btn-settings"></button>
+                                    <button class="mailing-block__btn-close"></button>
+                                  </div>
+                              </li>
+                              <li class="mailing-blocks__item mailing-block mailing-block_adv-block">
+                                  <span class="mailing-block__title">Рекламный блок</span>
+                                    <div class="mailing-block__btns">
+                                      <button class="mailing-block__btn-settings"></button>
+                                      <button class="mailing-block__btn-close"></button>
+                                    </div>
+                                </li>
+                                <li class="mailing-blocks__item mailing-block mailing-block_content-area">
+                                    <span class="mailing-block__title">Контентная область</span>
+                                    <div class="mailing-block__btns">
+                                      <button class="mailing-block__btn-settings"></button>
+                                      <button class="mailing-block__btn-close"></button>
+                                    </div>
+                                </li>
+                                <li class="mailing-blocks__item mailing-block mailing-block_adv-block">
+                                    <span class="mailing-block__title">Рекламный блок</span>
+                                      <div class="mailing-block__btns">
+                                        <button class="mailing-block__btn-settings"></button>
+                                        <button class="mailing-block__btn-close"></button>
+                                      </div>
+                                  </li>
+                                  <li class="mailing-blocks__item mailing-block mailing-block_system-block">
+                                      <span class="mailing-block__title">Системный блок</span>
+                                        <div class="mailing-block__btns">
+                                          <button class="mailing-block__btn-settings"></button>
+                                          <button class="mailing-block__btn-close"></button>
+                                        </div>
+                                    </li>
+                                    <li class="mailing-blocks__item mailing-block mailing-block_service-block">
+                                        <span class="mailing-block__title">Служебный блок</span>
+                                          <div class="mailing-block__btns">
+                                            <button class="mailing-block__btn-settings"></button>
+                                            <button class="mailing-block__btn-close"></button>
+                                          </div>
+                                      </li>
+                            </ul>
+                          </div>
+                          <div class="mailing-blocks__block-types block-types">
+                            <select name="choose-template" id="choose-template" class="select">
+                              <option value="1">Шаблон 1</option>
+                              <option value="2">Шаблон 2</option>
+                              <option value="3">Шаблон 3</option>
+                            </select>
+                            <h4 class="block-types__title">Типы блоков</h4>
+                            <ul class="block-types__list">
+                              <li class="block-types__item block-types__item_content-blocks">
+                                <h5 class="block-types__item-title">Контентные блоки</h5>
+                                <ul class="block-types-collapsed">
+                                  <li><a href="#">Контентный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                  <li><a href="#">Контентный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                  <li><a href="#">Контентный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                </ul>
+                              </li>
+                              <li class="block-types__item block-types__item_adv-blocks">
+                                <h5 class="block-types__item-title">Рекламные блоки</h5>
+                                  <ul class="block-types-collapsed">
+                                    <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                    <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                    <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                  </ul>
+                              </li>
+
+                              <li class="block-types__item block-types__item_content-area">
+                                  <h5 class="block-types__item-title">Контентная область</h5>
+                                    <ul class="block-types-collapsed">
+                                      <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                      <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                      <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="block-types__item block-types__item_system-block">
+                                    <h5 class="block-types__item-title">Системный блок</h5>
+                                      <ul class="block-types-collapsed">
+                                        <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                        <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                        <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                      </ul>
+                                  </li>
+
+                                  <li class="block-types__item block-types__item_service-block">
+                                      <h5 class="block-types__item-title">Служебный блок</h5>
+                                        <ul class="block-types-collapsed">
+                                          <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                          <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                          <li><a href="#">Рекламный блок с абсолютно рандомным содержанием для пользователя</a></li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mailing-create__content">
+                        <div class="mailing-params">
+                          <form>
+                            <div class="mailing-params__form-block">
+                              <h3 class="mailing-params__form-block-title">Данные о выпуске</h3>
+                              <div class="mailing-params__form-group">
+                                <label for="mailing-type" class="mailing-params__label">Тип рассылки:</label>
+                                <select class="select" name="mailing-type" id="mailing-type">
+                                  <option value="1">Тип_03</option>
+                                  <option value="2">Тип_04</option>
+                                  <option value="3">Тип_05</option>
+                                </select>
+                              </div>
+
+                              <div class="mailing-params__form-group">
+                                <label for="mailing-type" class="mailing-params__label">Название рассылки (внутренее):</label>
+                                <div class="mailing-params__input-wrapper input-wrapper">
+                                  <input type="text" class="mailing-params__input input-text input-text_border" placeholder="Название рассылки">
+                                </div>
+                              </div>
+
+                              <div class="mailing-params__form-group">
+                                <label class="mailing-params__label">Дата рассылки:</label>
+                                  <div class="datepicker datepicker_border">
+                                      <div class="datepicker__input-wrapper">
+                                        <input class="datepicker__input" id="mailing-date" type="text">
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="mailing-params__form-group">
+                                  <label for="mailing-type" class="mailing-params__label">Ответственный редактор:</label>
+                                  <select class="select" name="mailing-type" id="mailing-type">
+                                    <option value="1">Ивановченко И. И.</option>
+                                    <option value="2">Петров И. И.</option>
+                                    <option value="3">Сидоров И. И.</option>
+                                  </select>
+                              </div>
+                            </div>
+                            <div class="mailing-params__form-block">
+                              <h3 class="mailing-params__form-block-title">Шаблон и внешний вид</h3>
+                              <div class="mailing-params__form-group">
+                                <label class="mailing-params__label">Шаблон:</label>
+                                <select class="select" name="template" id="template">
+                                  <option value="1">Праздник</option>
+                                  <option value="2">Праздник 2</option>
+                                  <option value="3">Праздник 3</option>
+                                </select>
+                              </div>
+                              <div class="mailing-params__form-group">
+                                  <label class="mailing-params__label">Тема оформления:</label>
+                                  <select class="select" name="template2" id="template2">
+                                    <option value="1">Праздник</option>
+                                    <option value="2">Праздник 2</option>
+                                    <option value="3">Взятие Крыма</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="mailing-params__form-block">
+                              <h3 class="mailing-params__form-block-title">Данные об отправке</h3>
+                              <div class="mailing-params__form-group">
+                                <label class="mailing-params__label">Тема письма:</label>
+                                <input type="text" class="input-text input-text_border" placeholder="Тема письма">
+                              </div>
+                              <div class="mailing-params__form-group">
+                                  <label class="mailing-params__label">Адрес отправителя:</label>
+                                  <input type="text" class="input-text input-text_border" placeholder="Адрес отправителя">
+                                </div>
+                                <div class="mailing-params__form-group">
+                                    <label class="mailing-params__label">Адреc "Reply-to”:</label>
+                                    <input type="text" class="input-text input-text_border" placeholder='Адреc "Reply-to"'>
+                                  </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                     
+
+                      <div class="mailing-create__content">
+                          <div class="mailing-preview">
+                            <div class="mailing-preview__prototype">
+                              <img src="img/prototype.png" width="800" height="1975" alt="Изображение 1">
+                            </div>
+                            <div class="mailing-preview__side-panel">
+                              <button class="mailing-preview__btn mailing-preview__btn_active">Outlook</button>
+                              <button class="mailing-preview__btn">Веб-интерфейс</button>
+                              <button class="mailing-preview__btn">Мобильные устройства</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mailing-create__content">
+                            <div class="mailing-tasks">
+                                <div>
+                                  <button class="btn btn-sm btn-primary btn-add">Создать задачу</button>
+                                </div>
+                                <div class="mailing-tasks__item task">
+                                  <div class="task__top">
+                                    <a href="#" class="task__link"></a>
+                                    <div class="task__info-item">
+                                      <span class="task__info-item-key">ID задачи:</span>
+                                      <span class="task__info-item-value">№ 5678</span>
+                                    </div>
+                                    <div class="task__info-item">
+                                        <span class="task__info-item-key">Дата постановки:</span>
+                                        <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                      </div>
+                                      <div class="task__info-item">
+                                          <span class="task__info-item-key">Дата выполнения:</span>
+                                          <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                        </div>
+                                      <div class="task__participants">
+                                        <a href="#" class="task__participant">
+                                          <img src="img/participant_1.png" alt="Сергей Иванов">
+                                          <div class="task__participant-info">
+                                            <span class="task__participant-role">Ответственный</span>
+                                            <b class="task__participant-name">Сергей Иванов</b>
+                                          </div>
+                                        </a>
+                                        <div class="task__participants-arrow"></div>
+                                        <a href="#" class="task__participant">
+                                        <img src="img/participant_2.png" alt="Сергей Иванов">
+                                        <div class="task__participant-info">
+                                          <span class="task__participant-role">Постановщик</span>
+                                          <b class="task__participant-name">Дмитрий Сидоров</b>
+                                        </div>
+                                      </a>
+                                      </div> 
+                                      <!-- task participants  -->
+
+                                      <div class="task__progress-block">
+                                        <div class="task__progress-top">
+                                          <label class="task__progress-word">Прогресс</label>
+                                          <span class="task__progress-time">2:14:32 / 04:00</span>
+                                        </div>
+                                        <!-- task__progress-top  -->
+                                        <progress class="task__progress-bar id="progress_1" max="100" value="60">60%</progress>
+                                      </div>
+                                      <!-- task__progress-block  -->
+
+
+                                  </div>
+                                  <!-- task__top  -->
+                                  <div class="task__bottom">
+                                    <a href="#" class="task__bottom-link">Изменить заголовок на более короткий</a>
+                                    <div class="table-actions">
+                                        <button class="table-actions__btn table-actions__btn_edit" title="Редактировать"></button>
+                                        <button class="table-actions__btn table-actions__btn_delete" title="Удалить"></button>
+                                      </div>
+                                  </div>
+                                  <!-- task__bottom  -->
+                                </div>
+                                <div class="mailing-tasks__item task">
+                                    <div class="task__top">
+                                      <a href="#" class="task__link"></a>
+                                      <div class="task__info-item">
+                                        <span class="task__info-item-key">ID задачи:</span>
+                                        <span class="task__info-item-value">№ 5678</span>
+                                      </div>
+                                      <div class="task__info-item">
+                                          <span class="task__info-item-key">Дата постановки:</span>
+                                          <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                        </div>
+                                        <div class="task__info-item">
+                                            <span class="task__info-item-key">Дата выполнения:</span>
+                                            <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                          </div>
+                                        <div class="task__participants">
+                                          <a href="#" class="task__participant">
+                                            <img src="img/participant_1.png" alt="Сергей Иванов">
+                                            <div class="task__participant-info">
+                                              <span class="task__participant-role">Ответственный</span>
+                                              <b class="task__participant-name">Сергей Иванов</b>
+                                            </div>
+                                          </a>
+                                          <div class="task__participants-arrow"></div>
+                                          <a href="#" class="task__participant">
+                                          <img src="img/participant_2.png" alt="Сергей Иванов">
+                                          <div class="task__participant-info">
+                                            <span class="task__participant-role">Постановщик</span>
+                                            <b class="task__participant-name">Дмитрий Сидоров</b>
+                                          </div>
+                                        </a>
+                                        </div> 
+                                        <!-- task participants  -->
+  
+                                        <div class="task__progress-block">
+                                          <div class="task__progress-top">
+                                            <label class="task__progress-word">Прогресс</label>
+                                            <span class="task__progress-time">2:14:32 / 04:00</span>
+                                          </div>
+                                          <!-- task__progress-top  -->
+                                          <progress class="task__progress-bar id="progress_1" max="100" value="60">60%</progress>
+                                        </div>
+                                        <!-- task__progress-block  -->
+  
+  
+                                    </div>
+                                    <!-- task__top  -->
+                                    <div class="task__bottom">
+                                      <a href="#" class="task__bottom-link">Изменить заголовок на более короткий</a>
+                                      <div class="table-actions">
+                                          <button class="table-actions__btn table-actions__btn_edit" title="Редактировать"></button>
+                                          <button class="table-actions__btn table-actions__btn_delete" title="Удалить"></button>
+                                        </div>
+                                    </div>
+                                    <!-- task__bottom  -->
+                                  </div>
+                                  <div class="mailing-tasks__item task">
+                                      <div class="task__top">
+                                        <a href="#" class="task__link"></a>
+                                        <div class="task__info-item">
+                                          <span class="task__info-item-key">ID задачи:</span>
+                                          <span class="task__info-item-value">№ 5678</span>
+                                        </div>
+                                        <div class="task__info-item">
+                                            <span class="task__info-item-key">Дата постановки:</span>
+                                            <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                          </div>
+                                          <div class="task__info-item">
+                                              <span class="task__info-item-key">Дата выполнения:</span>
+                                              <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                            </div>
+                                          <div class="task__participants">
+                                            <a href="#" class="task__participant">
+                                              <img src="img/participant_1.png" alt="Сергей Иванов">
+                                              <div class="task__participant-info">
+                                                <span class="task__participant-role">Ответственный</span>
+                                                <b class="task__participant-name">Сергей Иванов</b>
+                                              </div>
+                                            </a>
+                                            <div class="task__participants-arrow"></div>
+                                            <a href="#" class="task__participant">
+                                            <img src="img/participant_2.png" alt="Сергей Иванов">
+                                            <div class="task__participant-info">
+                                              <span class="task__participant-role">Постановщик</span>
+                                              <b class="task__participant-name">Дмитрий Сидоров</b>
+                                            </div>
+                                          </a>
+                                          </div> 
+                                          <!-- task participants  -->
+    
+                                          <div class="task__progress-block">
+                                            <div class="task__progress-top">
+                                              <label class="task__progress-word">Прогресс</label>
+                                              <span class="task__progress-time">2:14:32 / 04:00</span>
+                                            </div>
+                                            <!-- task__progress-top  -->
+                                            <progress class="task__progress-bar id="progress_1" max="100" value="60">60%</progress>
+                                          </div>
+                                          <!-- task__progress-block  -->
+    
+    
+                                      </div>
+                                      <!-- task__top  -->
+                                      <div class="task__bottom">
+                                        <a href="#" class="task__bottom-link">Изменить заголовок на более короткий</a>
+                                        <div class="table-actions">
+                                            <button class="table-actions__btn table-actions__btn_edit" title="Редактировать"></button>
+                                            <button class="table-actions__btn table-actions__btn_delete" title="Удалить"></button>
+                                          </div>
+                                      </div>
+                                      <!-- task__bottom  -->
+                                    </div>
+                                    <div class="mailing-tasks__item task">
+                                        <div class="task__top">
+                                          <a href="#" class="task__link"></a>
+                                          <div class="task__info-item">
+                                            <span class="task__info-item-key">ID задачи:</span>
+                                            <span class="task__info-item-value">№ 5678</span>
+                                          </div>
+                                          <div class="task__info-item">
+                                              <span class="task__info-item-key">Дата постановки:</span>
+                                              <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                            </div>
+                                            <div class="task__info-item">
+                                                <span class="task__info-item-key">Дата выполнения:</span>
+                                                <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                              </div>
+                                            <div class="task__participants">
+                                              <a href="#" class="task__participant">
+                                                <img src="img/participant_1.png" alt="Сергей Иванов">
+                                                <div class="task__participant-info">
+                                                  <span class="task__participant-role">Ответственный</span>
+                                                  <b class="task__participant-name">Сергей Иванов</b>
+                                                </div>
+                                              </a>
+                                              <div class="task__participants-arrow"></div>
+                                              <a href="#" class="task__participant">
+                                              <img src="img/participant_2.png" alt="Сергей Иванов">
+                                              <div class="task__participant-info">
+                                                <span class="task__participant-role">Постановщик</span>
+                                                <b class="task__participant-name">Дмитрий Сидоров</b>
+                                              </div>
+                                            </a>
+                                            </div> 
+                                            <!-- task participants  -->
+      
+                                            <div class="task__progress-block">
+                                              <div class="task__progress-top">
+                                                <label class="task__progress-word">Прогресс</label>
+                                                <span class="task__progress-time">2:14:32 / 04:00</span>
+                                              </div>
+                                              <!-- task__progress-top  -->
+                                              <progress class="task__progress-bar id="progress_1" max="100" value="60">60%</progress>
+                                            </div>
+                                            <!-- task__progress-block  -->
+      
+      
+                                        </div>
+                                        <!-- task__top  -->
+                                        <div class="task__bottom">
+                                          <a href="#" class="task__bottom-link">Изменить заголовок на более короткий</a>
+                                          <div class="table-actions">
+                                              <button class="table-actions__btn table-actions__btn_edit" title="Редактировать"></button>
+                                              <button class="table-actions__btn table-actions__btn_delete" title="Удалить"></button>
+                                            </div>
+                                        </div>
+                                        <!-- task__bottom  -->
+                                      </div>
+                                      <div class="mailing-tasks__item task">
+                                          <div class="task__top">
+                                            <a href="#" class="task__link"></a>
+                                            <div class="task__info-item">
+                                              <span class="task__info-item-key">ID задачи:</span>
+                                              <span class="task__info-item-value">№ 5678</span>
+                                            </div>
+                                            <div class="task__info-item">
+                                                <span class="task__info-item-key">Дата постановки:</span>
+                                                <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                              </div>
+                                              <div class="task__info-item">
+                                                  <span class="task__info-item-key">Дата выполнения:</span>
+                                                  <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                                </div>
+                                              <div class="task__participants">
+                                                <a href="#" class="task__participant">
+                                                  <img src="img/participant_1.png" alt="Сергей Иванов">
+                                                  <div class="task__participant-info">
+                                                    <span class="task__participant-role">Ответственный</span>
+                                                    <b class="task__participant-name">Сергей Иванов</b>
+                                                  </div>
+                                                </a>
+                                                <div class="task__participants-arrow"></div>
+                                                <a href="#" class="task__participant">
+                                                <img src="img/participant_2.png" alt="Сергей Иванов">
+                                                <div class="task__participant-info">
+                                                  <span class="task__participant-role">Постановщик</span>
+                                                  <b class="task__participant-name">Дмитрий Сидоров</b>
+                                                </div>
+                                              </a>
+                                              </div> 
+                                              <!-- task participants  -->
+        
+                                              <div class="task__progress-block">
+                                                <div class="task__progress-top">
+                                                  <label class="task__progress-word">Прогресс</label>
+                                                  <span class="task__progress-time">2:14:32 / 04:00</span>
+                                                </div>
+                                                <!-- task__progress-top  -->
+                                                <progress class="task__progress-bar id="progress_1" max="100" value="60">60%</progress>
+                                              </div>
+                                              <!-- task__progress-block  -->
+        
+        
+                                          </div>
+                                          <!-- task__top  -->
+                                          <div class="task__bottom">
+                                            <a href="#" class="task__bottom-link">Изменить заголовок на более короткий</a>
+                                            <div class="table-actions">
+                                                <button class="table-actions__btn table-actions__btn_edit" title="Редактировать"></button>
+                                                <button class="table-actions__btn table-actions__btn_delete" title="Удалить"></button>
+                                              </div>
+                                          </div>
+                                          <!-- task__bottom  -->
+                                        </div>
+                                        <div class="mailing-tasks__item task">
+                                            <div class="task__top">
+                                              <a href="#" class="task__link"></a>
+                                              <div class="task__info-item">
+                                                <span class="task__info-item-key">ID задачи:</span>
+                                                <span class="task__info-item-value">№ 5678</span>
+                                              </div>
+                                              <div class="task__info-item">
+                                                  <span class="task__info-item-key">Дата постановки:</span>
+                                                  <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                                </div>
+                                                <div class="task__info-item">
+                                                    <span class="task__info-item-key">Дата выполнения:</span>
+                                                    <span class="task__info-item-value">12.11.2018 <i class="task__date-divider"></i> 11:12</span>
+                                                  </div>
+                                                <div class="task__participants">
+                                                  <a href="#" class="task__participant">
+                                                    <img src="img/participant_1.png" alt="Сергей Иванов">
+                                                    <div class="task__participant-info">
+                                                      <span class="task__participant-role">Ответственный</span>
+                                                      <b class="task__participant-name">Сергей Иванов</b>
+                                                    </div>
+                                                  </a>
+                                                  <div class="task__participants-arrow"></div>
+                                                  <a href="#" class="task__participant">
+                                                  <img src="img/participant_2.png" alt="Сергей Иванов">
+                                                  <div class="task__participant-info">
+                                                    <span class="task__participant-role">Постановщик</span>
+                                                    <b class="task__participant-name">Дмитрий Сидоров</b>
+                                                  </div>
+                                                </a>
+                                                </div> 
+                                                <!-- task participants  -->
+          
+                                                <div class="task__progress-block">
+                                                  <div class="task__progress-top">
+                                                    <label class="task__progress-word">Прогресс</label>
+                                                    <span class="task__progress-time">2:14:32 / 04:00</span>
+                                                  </div>
+                                                  <!-- task__progress-top  -->
+                                                  <progress class="task__progress-bar id="progress_1" max="100" value="60">60%</progress>
+                                                </div>
+                                                <!-- task__progress-block  -->
+          
+          
+                                            </div>
+                                            <!-- task__top  -->
+                                            <div class="task__bottom">
+                                              <a href="#" class="task__bottom-link">Изменить заголовок на более короткий</a>
+                                              <div class="table-actions">
+                                                  <button class="table-actions__btn table-actions__btn_edit" title="Редактировать"></button>
+                                                  <button class="table-actions__btn table-actions__btn_delete" title="Удалить"></button>
+                                                </div>
+                                            </div>
+                                            <!-- task__bottom  -->
+                                          </div>
+                              
+                            </div>
+                          </div>
+                      
+                    </div>
+                  </div>
+                </div>
+            </main>
+        </div>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

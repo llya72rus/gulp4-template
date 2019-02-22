@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192px" height="64px" viewBox="0 0 192 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy-23" fill="#F64C3C" x="0" y="8" width="48" height="48" rx="24"></rect>
+        <g id="Group" transform="translate(15.000000, 24.000000)">
+            <path d="M3,14 L2,14 C0.8954305,14 0,13.1045695 0,12 L0,2 C0,0.8954305 0.8954305,0 2,0 L16,0 C17.1045695,0 18,0.8954305 18,2 L18,8" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+            <polyline id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="17 1 9 6 1 1"></polyline>
+            <rect id="Rectangle-Copy-3" fill="#FFFFFF" x="7" y="13" width="12" height="2" rx="1"></rect>
+            <polyline id="Path-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="16 12 18 14 16 16"></polyline>
+        </g>
+        <text id="Сиситема-подготовки" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="16" letter-spacing="0.300000012" fill="#FFFFFF">
+            <tspan x="64" y="13">Сиситема </tspan>
+            <tspan x="64" y="29">подготовки </tspan>
+            <tspan x="64" y="45">рассыло</tspan>
+            <tspan x="123.494531" y="45">к</tspan>
+        </text>
+    </g>
+</svg>
